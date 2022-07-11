@@ -13,6 +13,10 @@
             width: 600px;
             border: 2px solid black;
             margin: 10px;
+            background-color: darkgray;
+        }
+        .instrumentos{
+            width: 150px;
         }
     </style>
 </head>
@@ -29,7 +33,7 @@
     <form action="https://www.example.com/subscribe.php">
         <p>
             Você toca algum dos seguintes instrumentos? (Você pode selecionar mais de uma opção mantendo pressionado o Control em um PC ou a tecla de Command em um Mac enquanto seleciona opções diferentes)</p>
-            <select name="instrumentos" size="3" multiple="multiple">
+            <select class="instrumentos" name="instrumentos" size="3" multiple="multiple">
                 <option value="violao" selected="selected">violão</option>
                 <option value="bateria">bateria</option>
                 <option value="Teclado" selected="selected">Teclado</option>
