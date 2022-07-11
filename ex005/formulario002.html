@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        .body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            width: 600px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
     <h2>Caixa de Lista Suspensa</h2>
-    <p>Em qual aparelho você ouve musicas ?</p>
     <form action="https://www.example.com/subscribe.php">
+        <p>Em qual aparelho você ouve musicas ?</p>
         <select name="device">
             <option value="iPod">iPod</option>
             <option value="radio">Radio</option>
             <option value="computador">Computador</option>
         </select>
     </form>
-
-</head>
-<body>
-    
+    <form action="https://www.example.com/subscribe.php">
+        <p>
+            Você toca algum dos seguintes instrumentos? (Você pode selecionar mais de uma opção mantendo pressionado o Control em um PC ou a tecla de Command em um Mac enquanto seleciona opções diferentes)</p>
+            <select name="instrumentos" size="3" multiple="multiple">
+                <option value="violao" selected="selected">violão</option>
+                <option value="bateria">bateria</option>
+                <option value="Teclado" selected="selected">Teclado</option>
+                <option value="baixo">baixo</option>
+            </select>
+    </form>
 </body>
 </html>
