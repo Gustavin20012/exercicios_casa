@@ -23,15 +23,29 @@
 <body>
     <h2>Rotulando Controles de Formulário</h2>
     <form action="https://www.example.com/subscribe.php">
-        <label>Age: <input type="text" name="age"></label>
+        <label>Nome: <input type="text" name="age"></label>
         <br>
         Gênero:
-        <input type="radio" id="fêmea" name="gênero" value="f">
-        <label for="fêmea">fêmea</label>
+        <input type="radio" id="feminino" name="gênero" value="f">
+        <label for="feminino">Feminino</label>
         <input type="radio" id="masculino" name="gênero" value="m">
         <label for="masculino">Masculino</label>
-
-
+    </form>
+    <form action="https://www.example.com/subscribe.php">
+        <fieldset>
+            <legend>Detalhes de contato</legend>
+            <label for="">Email
+            <br>
+                <input type="text" name="email"><label for=""></label>
+            <br>
+            <label for="">Celular
+            <br>
+                <input type="text" name="Celular"></label>
+            <br>
+            <label for="">Telefone
+            <br>
+                <input type="text" name="telefone"></label>
+        </fieldset>
     </form>
 </body>
 </html>
