@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            width: 600px;
+            border: 2px solid black;
+            margin: 10px;
+            background-color: darkgray;
+        }
+        .instrumentos{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Rotulando Controles de Formulário</h2>
+    <form action="https://www.example.com/subscribe.php">
+        <label>Age: <input type="text" name="age"></label>
+        <br>
+        Gênero:
+        <input type="radio" id="fêmea" name="gênero" value="f">
+        <label for="fêmea">fêmea</label>
+        <input type="radio" id="masculino" name="gênero" value="m">
+        <label for="masculino">Masculino</label>
+
+
+    </form>
+</body>
+</html>
