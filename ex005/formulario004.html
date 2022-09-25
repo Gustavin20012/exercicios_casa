@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+            padding: 5px;
+        }
+        legend {
+            margin
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.example.com/subscribe.php">
+        <fieldset>
+        <legend>You Details</legend>
+        <label id="name" for="Name">Name:</label>
+        <input type="text" name="name"> <br>
+        <label for="email">Email:</label>
+        <input type="email" name="Email"><br>
+    </fieldset>
+    </form>
+    <form action="https://www.example.com/subscribe.php">
+        <fieldset>
+            <legend>You Review</legend>
+            <label for="">How did you hear about us?</label>
+            <select name="Referencia" id="">
+                <option value="Google" selected="selected">Google</option>
+                <option value="amigos">Amigos</option>
+                <option value="anúncios">Anúncios</option>
+                <option value="outros">Outros</option>
+            </select>
+            <br>
+            <label for="">Would you visit again?</label>
+            <input type="radio" name="rating" value="Yes">Yes
+            <input type="radio" name="rating" value="No">No
+            <input type="radio" name="rating" value="Talvez">Talvez
+            <br>
+            <label for="">Comentario</label>
+            <br>
+            <textarea name="comentario" id="" cols="340" rows="4"></textarea>
+            <label for="">
+                <input type="checkbox" name="subscribe" checked="checked">
+                Inscreva-me para atualizações por e-mail
+            </label>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
