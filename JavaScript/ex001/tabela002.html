@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com JavaScript</title>
+</head>
+<body>
+    <h1>Teste de Array adicionando</h1>
+    <script type="text/javascript">
+        function append(array, value) {
+            var tempArray = new Array(array.length + 1); //Crie um tempArray maior que array
+
+            for(var i = 0;i < array.length; i++){
+                tempArray[i] = array[i]; //copie o valor da matriz para temapArray
+            }
+            tempArray[array.length] = value //Insinsira o valor para o último índice
+
+            return tempArray;
+        }
+            var scores = new Array(90,70,50,80,60,85);
+
+            scores = append(scores, 75);
+
+            for(var i = 0; i < scores.length; i++){
+            document.write(scores[i]+",");}
+    </script>
+</body>
+</html>
