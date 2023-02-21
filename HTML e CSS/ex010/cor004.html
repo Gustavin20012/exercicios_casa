@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL e HSLA</title>
+    <style>
+        body { /* Ultilizando a declaraçõa HSL para indentificar o Background-color*/
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: hsl(0, 0%, 78%);
+        }
+
+        h1 { /* Para o h1 foi ultilizado duas declarações (nome da cor) e HSL, como o HSL foi declarado sendo o segundo a preferência vai ser dele caso o navegador não seja compativel ele vai usar a primeira declaração por nome.*/
+            color: white;
+            background-color: darkcyan;
+            background-color: hsl(180, 100%, 27%);
+
+            padding: 5px;
+            padding-top: 10px;
+            width: 600px;
+            height: 50px;
+        }
+
+        h2 { /* Para o h1 foi ultilizado duas declarações (nome da cor) e HSL, como o HSL foi declarado sendo o segundo a preferência vai ser dele caso o navegador não seja compativel ele vai usar a primeira declaração por nome.*/
+            color: white;
+            background-color: #ee3e80;
+            background-color: hsl(338, 84%, 59%);
+
+            padding: 5px;
+            padding-top: 10px;
+            width: 600px;
+            height: 50px;             
+        }
+        
+        p { /* Aqui foi ultilizado a declaração pelo HSLA na onde a letra (A) representa a tranpârencia.*/
+            background-color: hsla(0, 100%, 100%, 0.5);
+
+            padding: 5px;
+            width: 600px;
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biologia Marinha</h1>
+        <h2>A composição da água do mar</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestiae autem non dolore rem dolor quod ratione amet facere officia, laborum excepturi architecto, necessitatibus sapiente ex sit provident aliquam porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate officia quaerat non tempore cum laboriosam ipsam eligendi debitis, id vero voluptatem deserunt ea aspernatur dolore aliquid nam numquam? Velit, sed.</p>
+</body>
+</html>
