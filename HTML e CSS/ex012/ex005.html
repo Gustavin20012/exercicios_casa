@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding e Margin</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.2em;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .sem {
+            width: 450px;
+            height: 651px;
+            display: inline-block;
+        }
+
+        .sem > div {
+            width: 300px;
+            height: 150px;
+            border: 2px solid red;
+        }
+
+        .com {
+            width: 500px;
+            height: 651px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .com  > div {
+            width: 300px;
+            height: 150px;
+            border: 2px solid red;
+            margin: 5px;
+            padding: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Padding e Margin</h1>
+    <div class="sem">
+        <h2>Sem padding e margin</h2>
+        <div>
+            <h3>Moog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rem aut quod aliquid laboriosam architecto ea, vitae eum laborum accusamus nulla iusto maxime veritatis repellat. Voluptatem necessitatibus repellendus quis rerum.</p>
+        </div>
+        <div>
+            <h3>ARP</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi commodi tempora deleniti quo cumque et molestiae, minima error eaque reiciendis? Quia veniam maiores voluptatum molestiae odit quos consectetur a?</p>
+        </div>
+        <div>
+            <h3>Sequential Circuits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel beatae in enim delectus inventore nostrum, dolorem illo at reiciendis sequi, cupiditate iure accusamus mollitia. Ipsum commodi quae possimus at.</p>
+        </div>
+    </div>
+    <div class="com">
+        <div>
+            <h3>Moog</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rem aut quod aliquid laboriosam architecto ea, vitae eum laborum accusamus nulla iusto maxime veritatis repellat. Voluptatem necessitatibus repellendus quis rerum.</p>
+        </div>
+        <div>
+            <h3>ARP</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi commodi tempora deleniti quo cumque et molestiae, minima error eaque reiciendis? Quia veniam maiores voluptatum molestiae odit quos consectetur a?</p>
+        </div>
+        <div>
+            <h3>Sequential Circuits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel beatae in enim delectus inventore nostrum, dolorem illo at reiciendis sequi, cupiditate iure accusamus mollitia. Ipsum commodi quae possimus at.</p>
+        </div>
+    </div>
+</body>
+</html>
