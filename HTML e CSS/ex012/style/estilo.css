@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+    margin: 5px;
+    padding: 5px;
+}
+
+#page {
+    max-width: 940px;
+    min-width: 400px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+    background-color: #ffffff;
+}
+
+div.logo {
+    text-align: center;
+}
+
+menu {
+    border-top: 4px double black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-right: 100px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover a.on {
+    color: #cc3333;
+    background-color: #ffffff;
+}
+
+a:active {
+    color: rgb(132, 110, 36);
+}
+
+#imagem {
+    display: block;
+    background: blue url(../img/piano.jpg);
+}
+
+p {
+    margin-top: 5px;
+}
