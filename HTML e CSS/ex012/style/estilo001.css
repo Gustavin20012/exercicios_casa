@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+}
+
+/* Alinhamento de pagina geral*/
+#page {
+    max-width: 940px;
+    min-width: 400px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+    background-color: #ffffff;
+}
+
+header {
+    text-align: center;
+}
+
+/* Configurações do logo*/
+div.logo {
+    display: inline-block;
+    background: rgb(255, 255, 255) url(../img/logo.png) center center no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+
+/* Bordas para o menu*/
+menu {
+    border-top: 4px double black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+/* Alinhamento do Botão*/
+ul {
+    padding: 0px;
+}
+
+/* Alinhamento do Botão*/
+li {
+    display: inline;
+    margin-right: 25px;
+}
+
+/* Efeito do botão*/
+a:link {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+a:visited {
+    color: rgb(66, 66, 66);
+}
+
+a:hover {
+    background-color: rgb(57, 56, 56);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:active {
+    background-color: rgb(57, 56, 56);
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+/* Alinhamento da imagem do piano*/
+div.piano {
+    display: inline-block;
+    background: rgb(0, 0, 0) url(../img/piano002.jfif) center center no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+
+/* Alinhameto do text a esquerda*/
+main > p {
+    text-align: left;
+}

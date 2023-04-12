@@ -1,0 +1,32 @@
+@charset "UFT-8";
+@media screen and (min-width:768px) and (max-width:1002px) {
+    
+    li {
+        display: inline;
+        margin-right: 80px;
+    }
+
+    div.piano {
+        display: inline-block;
+        background: rgb(0, 0, 0) url(../img/piano002.jpg) center center no-repeat;
+        background-size: cover;
+        width: 600px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1002px) {
+    
+    li {
+        display: inline;
+        margin-right: 150px;
+    }
+
+    div.piano {
+        display: inline-block;
+        background: rgb(0, 0, 0) url(../img/piano002.jpg) center center no-repeat;
+        background-size: cover;
+        width: 940px;
+        height: 200px;
+    }
+}
