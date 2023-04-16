@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty-cells</title>
+    <style>
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.2em;
+        }
+
+        .empty {
+            border: 2px solid black;
+            display: inline-block;
+            width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .one > td, .two > td {
+            border: 1px solid #0088dd;
+            padding: 15px;
+        }
+
+        table.one {
+            display: inline-block;
+            empty-cells: show;
+            margin: 0px 300px 0px 0px;
+        }
+
+        table.two {
+            display: inline-block;
+            empty-cells: hide;
+        }
+
+        .border_one > td, .border_two > td {
+            background-color: #0088dd;
+            padding: 15px;
+            border: 2px solid black;
+        }
+
+        table.border_one {
+            display: inline-block;
+            border-spacing: 5px 15px;
+        }
+
+        table.border_two {
+            display: inline-block;
+            border-collapse: collapse;
+            margin-left: 5px;
+        }
+
+        div.border {
+            display: inline-block;
+            border: 2px solid black;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="empty">
+        <h2>empty-cells</h2>
+        <h3>empty-cells: show</h3>
+        <table class="one">
+            <tr class="one">
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr class="one">
+                <td>3</td>
+                <td></td>
+            </tr>
+        </table>
+        <h3>empty-cells: hide</h3>
+        <table class="two">
+            <tr class="two">
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr class="two">
+                <td>3</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="border">
+        <h2>border-spacing/border-collapse</h2>
+        <h3>border-spacing</h3>
+            <table class="border_one">
+                <tr class="border-one">
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr class="border_one">
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        <h3>border-collapse</h3>
+            <table class="border_two">
+                <tr class="border_two">
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr class="border_two">
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>
