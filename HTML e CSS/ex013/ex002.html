@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list-style</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.2em;
+        }
+
+        ul {
+            width: 150px;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        div.inside {
+            display: inline-block;
+            border: 2px solid black;
+        }
+
+        div.outside {
+            display: inline-block;
+            border: 2px solid black;
+        }
+
+        ul.season {
+            list-style-position: outside;
+        }
+
+        ul.illuminations {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <div class="inside">
+        <h2>list-style-position: inside</h2>
+            <ul class="illuminations">
+                <li>That idol, black eyes and ...</li>
+                <li>Gracious son of Pan! ...</li>
+                <li>When the word is reduced</li>
+            </ul>
+    </div>
+    <div class="outside">
+        <h2>list-style-position: outside</h2>
+        <ul class="season">
+            <li>Once, if my memory serves ...</li>
+            <li>Hand't I once a youth ...</li>
+            <li>Autum already! ...</li>
+        </ul>
+    </div>
+</body>
+</html>
