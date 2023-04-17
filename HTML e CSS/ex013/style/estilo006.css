@@ -1,0 +1,47 @@
+@charset "UFT-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+}
+
+fieldset {
+    width: 250px;
+    border: 1px solid #7a7a7a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+}
+
+legend {
+    background-color: #efefef;
+    border: 1px solid #7a7a7a;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+form > fieldset > input {
+    border: 0px;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+form > fieldset > input:hover {
+    border: 0px;
+    border-bottom: 1px solid #555555;
+    cursor: pointer;
+}
+
+#enviar {
+    margin: 5px;
+    color: #bebebe;
+    border-bottom: 2px solid #b2b2b2;
+    background-color: #323232;
+}
+
+#enviar:hover {
+    color: #202020;
+    border: 1px solid #b2b2b2;
+    background-color: #eaeaea;
+}
